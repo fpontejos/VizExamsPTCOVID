@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparative analysis of pre and post COVID exam results in Portugal</title>
+    <style>
+        :root {
+            --color-bg: #071013;
+            --color-text: #dff2d8;
+            --color-text-muted: #9fb8a8;
+            --color-text-subtle: #4a5a52;
+            --color-primary: #5073b8;
+            --color-primary-hover: #6384c9;
+            --color-disabled: #2a3538;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--color-bg);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text);
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            color: var(--color-text-muted);
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: var(--color-text);
+            background: var(--color-primary);
+            transition: background 0.2s;
+            min-width: 180px;
+        }
+
+        .btn:hover {
+            background: var(--color-primary-hover);
+        }
+
+        .btn.disabled {
+            background: var(--color-disabled);
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .btn.disabled:hover {
+            background: var(--color-disabled);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 2rem;
+            color: var(--color-text-subtle);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comparative analysis<br>
+            of pre and post COVID exam results<br>
+            in Portugal</h1>
+        <p class="subtitle">Interactive Visualizations</p>
+
+        <div class="buttons">
+            <a href="viz1.html" class="btn">Visualization 1</a>
+            <a href="viz2.html" class="btn disabled" title="Coming soon">Visualization 2</a>
+            <a href="viz3.html" class="btn disabled" title="Coming soon">Visualization 3</a>
+        </div>
+    </div>
+
+    <footer>
+        COVID-19 Impact on Education Study
+    </footer>
+</body>
+</html>
